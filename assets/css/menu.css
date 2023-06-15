@@ -1,0 +1,70 @@
+.set-section {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 3rem 0;
+}
+
+.sushi-set {
+    background-color: rgb(0, 0, 0, 0.14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sushi-set__img-section {
+    display: inline-flex;
+    position: relative;
+}
+
+.sushi-set__image {
+    /* width: 30rem; */
+    min-width: 20rem;
+    max-width: 98%;
+    margin-bottom: 1rem;
+}
+
+.sushi-set__number {
+    background-color: rgb(var(--color-primary-orange));
+    display: inline-block;
+    padding: 1em 4em;
+    margin-bottom: 1rem;
+}
+
+.sushi-set__quantity {
+    color: rgb(var(--color-primary-orange));
+    margin-bottom: .7rem;
+}
+
+
+.sushi-set__price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #d20000;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (min-width: 50em) {
+    .set-section {
+        grid-template-columns: 50% 50%;
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 87em) {
+    .set-section {
+        grid-template-columns: 30% 30% 30%;
+    }
+}
